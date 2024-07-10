@@ -1,0 +1,27 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: rfjohn
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: quiz-app
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: quiz-app-backend
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3001
+
+functions:
+  getQuestion:
+    handler: handler.getQuestion
+    events:
+      - httpApi:
+          path: question
+          method: get
+    timeout: 15
