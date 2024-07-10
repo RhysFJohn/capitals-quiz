@@ -45,7 +45,7 @@ This application helps users learn capital cities around the world by presenting
 
   **4. Configure Serverless**
 
-  Ensure you have your AWS credentials configured. You can follow the [Serverless Framework AWS setup guide]('https://www.serverless.com/framework/docs-getting-started') if needed.
+  Ensure you have your AWS credentials configured. You can follow the [Serverless Framework AWS setup guide](https://www.serverless.com/framework/docs-getting-started) if needed.
 
 #### Running Backend locally with Serverless Offline
 
@@ -112,4 +112,4 @@ Open `quiz-app-frontend/src/Components/QuizComponent.tsx` and update `fetchQuest
 
 #### Acknowledgements
 
-[countriesAPI]('https://countriesnow.space/api/v0.1/countries/capital') for providing the countries and capitals data.
+[countriesAPI](https://countriesnow.space/api/v0.1/countries/capital) for providing the countries and capitals data.
