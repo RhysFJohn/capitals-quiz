@@ -17,51 +17,62 @@ This application helps users learn capital cities around the world by presenting
 * Serverless Framework
 
 ## Setup
+
 ### Backend Setup
+
   **1. Install Serverless Framework**
   If you haven't already, install the Serverless Framework globally:
+
 ```bash
   npm install -g serverless
 ```
+
   **2. Clone the Repository**
   Clone this repository to your local machine:
-  ```bash
+
+```bash
     git clone https://github.com/RhysFJohn/capitals-quiz.get
     cd capitals-quiz
-  ```
+```
 
   **3. Install Dependencies**
   Navigate to the quiz-app-backend directory and isntall the required dependencies
-  ```bash
+
+```bash
     cd quiz-app-backend
     npm install
-  ```
+```
 
   **4. Configure Serverless**
 
   Ensure you have your AWS credentials configured. You can follow the [Serverless Framework AWS setup guide]('https://www.serverless.com/framework/docs-getting-started') if needed.
 
 #### Running Backend locally with Serverless Offline
+
   **1. Update `serverless.yml`**
     Ensure that the `serverless.yml` file include the Serverless Offline plugin.
 
-    ```yaml
-      plugins:
-        - serverless-offline
-    ```
+```yaml
+plugins:
+  - serverless-offline
+```
+
   **2. Start Serverless Offline**
     Start Serverless Offline plugin to simulate AWS Lambda and API Gateway locally
-    ```bash
-      serverless offline
-    ```
+
+```bash
+serverless offline
+```
 
   \* Note the endpoint URL provided by **Serverless**
 
 ### Frontend setup
+
 **1. Navigate to thee Frontend Directory**
-  ```bash
+
+```bash
   cd quiz-app-frontend
-  ```
+```
 
 **2. Install Dependencies**
 Install the required dependencies
@@ -90,13 +101,15 @@ Open `quiz-app-frontend/src/Components/QuizComponent.tsx` and update `fetchQuest
 **4. Start the Frontend**
   start the development server:
 
-  ```bash
+```bash
     npm start
-  ```
+```
 
 #### Summary
-  - Use `serverless offline` to run the backend locally
-  - Use `npm start` in the frontend directory to run the React app
+
+- Use `serverless offline` to run the backend locally
+- Use `npm start` in the frontend directory to run the React app
+
 #### Acknowledgements
 
 [countriesAPI]('https://countriesnow.space/api/v0.1/countries/capital') for providing the countries and capitals data.
